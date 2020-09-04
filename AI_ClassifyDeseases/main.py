@@ -11,15 +11,14 @@ import tensorflow as tf
 CSV_COLUMN_NAMES = ['head_ache', 'hard_breathing', 'what`s_up', 'unconsiousness']
 Deseases = ['Covid 19', 'Brain Cancer', 'asphixia', 'feaver', 'Lung Cancer', 'nothing']
 # Lets define some constants to help us later on
-train = pd.read_csv('train1.csv')
-test = pd.read_csv('test1.csv')
+train = pd.read_csv('train2.csv')
+test = pd.read_csv('test2.csv')
 train_y = train.pop('what`s_up')
 test_y = test.pop('what`s_up')  # the species column is now gone
 """
 Covid 19, Brain Cancer, asphixia, feaver, Lung Cancer, nothing
 0               1           2         3         4           5  
 """
-
 
 def input_fn( features, labels, training=True, batch_size=4):
     # Convert the inputs to a Dataset.
@@ -40,16 +39,16 @@ print(my_feature_columns)
 classifier = tf.estimator.DNNClassifier(
     feature_columns=my_feature_columns,
     # Two hidden layers of 30 and 10 nodes respectively.
-    hidden_units=[30, 10],
+    hidden_units=[300, 100],
     # The model must choose between 3 classes.
     n_classes=6)
 classifier.train(
         input_fn=lambda: input_fn(train, train_y, training=True),
         steps=5000)  # We include a lambda to avoid creating an inner function previously
-# eval_result = classifier.evaluate(
-#     input_fn=lambda: input_fn(test, test_y, training=False))
-#
-# print('\nTest set accuracy: {accuracy:0.3f}\n'.format(**eval_result))
+eval_result = classifier.evaluate(
+    input_fn=lambda: input_fn(test, test_y, training=False))
+
+print('\nTest set accuracy: {accuracy:0.3f}\n'.format(**eval_result))
 
 print("The old prediction.")
 predictions = classifier.predict(

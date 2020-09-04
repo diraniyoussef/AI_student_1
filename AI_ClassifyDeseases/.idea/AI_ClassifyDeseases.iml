@@ -4,7 +4,6 @@
     <content url="file://$MODULE_DIR$/../AI_ClassifyDeseases" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Trial" />
     <orderEntry type="module" module-name="AI_thoughts" />
   </component>
 </module>

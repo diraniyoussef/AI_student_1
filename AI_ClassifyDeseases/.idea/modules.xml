@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../AI_Classify_iris/.idea/AI_Classify_iris.iml" filepath="$PROJECT_DIR$/../AI_Classify_iris/.idea/AI_Classify_iris.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../AI_linearReg_amnesia/.idea/AI_linearReg_amnesia.iml" filepath="$PROJECT_DIR$/../AI_linearReg_amnesia/.idea/AI_linearReg_amnesia.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../AI_thoughts/.idea/AI_thoughts.iml" filepath="$PROJECT_DIR$/../AI_thoughts/.idea/AI_thoughts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../AI_ClassifyDeseases/.idea/AIclassifier.iml" filepath="$PROJECT_DIR$/../AI_ClassifyDeseases/.idea/AIclassifier.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Scikit/.idea/Scikit.iml" filepath="$PROJECT_DIR$/../Scikit/.idea/Scikit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../AI_linearReg_titanic/.idea/Trial.iml" filepath="$PROJECT_DIR$/../AI_linearReg_titanic/.idea/Trial.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../ppb_game/.idea/ppb_game.iml" filepath="$PROJECT_DIR$/../ppb_game/.idea/ppb_game.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../basic_python/.idea/untitled.iml" filepath="$PROJECT_DIR$/../basic_python/.idea/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AI_ClassifyDeseases/.idea/AI_ClassifyDeseases.iml" filepath="$PROJECT_DIR$/../AI_ClassifyDeseases/.idea/AI_ClassifyDeseases.iml" />
     </modules>
   </component>
 </project>
