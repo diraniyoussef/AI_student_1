@@ -12,7 +12,7 @@ def predictdesease( features, classifier, input_fn, Deseases ) :
       study_case_features_values[feature_name] = [float(val)]
 
     predictions = classifier.predict(
-        input_fn=lambda: input_fn( study_case_features_values ) )
+        input_fn = lambda: input_fn( study_case_features_values ) )
     print( predictions )
     for pred_dict in predictions :
         print( pred_dict )
