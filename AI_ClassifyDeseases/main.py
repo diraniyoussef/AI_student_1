@@ -41,7 +41,13 @@ import ChangeValueOfColumn
 # ChangeValueOfColumn.change( train, 0, 0.5, 'unconsiousness' )
 # ChangeValueOfColumn.change( test, 0, 0.5, 'unconsiousness' )
 
-# print(train)
+ChangeValueOfColumn.change( train, 1, 50, 'head_ache' )
+ChangeValueOfColumn.change( test, 1, 50, 'head_ache' )
+ChangeValueOfColumn.change( train, 1, 50, 'hard_breathing' )
+ChangeValueOfColumn.change( test, 1, 50, 'hard_breathing' )
+ChangeValueOfColumn.change( train, 1, 50, 'unconsiousness' )
+ChangeValueOfColumn.change( test, 1, 50, 'unconsiousness' )
+print(train)
 
 # now the train dataFrame has changed
 
